@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Home</title>
+    <style>
+    
+        #background{
+            background-image: url("assets/Background_Cinema.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-top: 5vh;
+            height: 65vh;
+            width: 100%;
+        }
+    
+    </style>
 </head>
 <body>
-    <h1>Cinema</h1>
-    <h3>
-        <a href="inscricao.html">Formulário de Incrição</a><br>
-        <a href="filmes.html">Catalogo de filmes</a>
-    </h3>
-    
+    <div id="page-container">
+        <header>
+            <h1>Cinema</h1>
+            <div class="links">        
+                <nav id="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="filmes.html">Catálogo</a>
+                    <a href="inscricao.html">Inscrição</a>              
+                </nav>
+            </div>
+        </header>
+        <div id="content-wrap">
+            <main>   
+                <div id="background"></div>
+            </main>
+        </div>
+        <footer>
+            <p>Av. Monsenhor José Aloísio Pinto, 300 - Dom Expedito, Sobral - CE, 62050-255</p>         
+        </footer>
+    </div>
     
 </body>
 </html>

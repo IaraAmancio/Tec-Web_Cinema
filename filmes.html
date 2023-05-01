@@ -5,21 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes em cartaz</title>
+    <style>
+        .imagens-filmes
+        {
+            text-align: center;
+            
+        }
+        .imagens > a{
+            margin: 0 10px;
+        }
+        h1{
+            color: rgb(97, 3, 3);
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <main>
-        <article>
-            <h1>Filmes em cartaz</h1>
-            <a href="detalhes_filme1.html">
-                <img src="imagens/titanic.jpg" alt="Cartaz filme Titanic" width="275" height="400">
-            </a>
-            <a href="detalhes_filme2.html">
-                <img src="imagens/avatar.jpg" alt="Cartaz filme Avatar" width="275" height="400">
-            </a>
-            <a href="detalhes_filme3.html">
-                <img src="imagens/Avengers_Endgame.jpg" alt="Cartaz filme Avengers" width="275" height="400">
-            </a>
-        </article>
-    </main>
+    <div id="page-container">
+        <header>
+            <h1>Cinema</h1>
+            <div class="links">        
+                <nav id="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="filmes.html">Catálogo</a>
+                    <a href="inscricao.html">Inscrição</a>              
+                </nav>
+            </div>
+        </header>
+        <div id="content-wrap">
+            <main>
+                <div class="imagens-filmes">
+                    <h1>Filmes em cartaz</h1>
+                    <nav class="imagens">
+                        <a href="detalhes_filme1.html">
+                        <img src="assets/titanic.jpg" alt="Cartaz filme Titanic" width="275" height="400">
+                        </a>
+                        <a href="detalhes_filme2.html">
+                            <img src="assets/avatar.jpg" alt="Cartaz filme Avatar" width="275" height="400">
+                        </a>
+                        <a href="detalhes_filme3.html">
+                            <img src="assets/Avengers_Endgame.jpg" alt="Cartaz filme Avengers" width="275" height="400">
+                        </a>
+                    </nav>             
+                </div>             
+            </main>
+        </div>    
+        <footer> Av. Monsenhor José Aloísio Pinto, 300 - Dom Expedito, Sobral - CE, 62050-255</footer>
+    </div>
+    
 </body>
 </html>
